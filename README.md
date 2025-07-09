@@ -21,7 +21,7 @@ Sebelum memulai, pastikan Anda memiliki:
 
 1.  **Clone Repositori**
     ```bash
-    git clone [URL_REPOSITORI_ANDA]
+    git clone https://github.com/tlogowatu/website-tlogowatu-backend
     cd backend-berita-desa
     ```
 
@@ -45,7 +45,6 @@ Sebelum memulai, pastikan Anda memiliki:
 4.  **Konfigurasi Kunci Firebase**
     * Unduh file `serviceAccountKey.json` dari konsol Firebase Anda.
     * Letakkan file tersebut di folder utama proyek (`backend-berita-desa/`).
-    * **Penting:** Pastikan nama file ini sudah ditambahkan ke dalam `.gitignore` agar tidak terunggah ke repositori publik.
 
 ## Menjalankan Server
 
