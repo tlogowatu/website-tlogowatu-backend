@@ -56,9 +56,9 @@ const updateDataHandler = async(req, res) => {
     const newData = req.body;
 
     // --- TAMBAHKAN VALIDASI DI SINI ---
-    const dusunYangDiizinkan = ['tlogowatu', 'mendak', 'sumberejo'];
+    const dusunYangDiizinkan = ['narumkidul', 'mendak', 'sumberejo'];
     if (!dusunYangDiizinkan.includes(id)) {
-      const error = new Error("ID Dusun tidak valid. Gunakan 'tlogowatu', 'mendak', atau 'sumberejo'.");
+      const error = new Error("ID Dusun tidak valid. Gunakan 'narumkidul', 'mendak', atau 'sumberejo'.");
       error.statusCode = 400; // Bad Request
       throw error;
     }
