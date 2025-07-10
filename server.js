@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 
+const authRoutes = require('./src/routes/authRoutes');
 const beritaRoutes = require('./src/routes/beritaRoutes');
 const dataRoutes = require('./src/routes/dataRoutes');
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
+app.use('/api/auth', authRoutes);
 app.use('/api/berita', beritaRoutes);
 app.use('/api/data', dataRoutes);
 

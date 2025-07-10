@@ -5,10 +5,9 @@ const {
   getAllDataHandler,
   updateDataHandler
 } = require('../controllers/dataControllers');
+const { protect } = require('../middleware/authMiddleware');
 
-// GET /api/data
 router.get('/', getAllDataHandler);
-// PUT /api/data/tlogowatu
-router.put('/:id', updateDataHandler);
+router.put('/:id', protect, updateDataHandler);
 
 module.exports = router;
